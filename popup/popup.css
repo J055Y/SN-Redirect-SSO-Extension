@@ -1,0 +1,74 @@
+:root {
+    --standard-margin: 0.4rem;
+    --standard-border-radius: 3px;
+}
+
+h2 {
+    margin-bottom: var(--standard-margin);
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex > p {
+    white-space: nowrap;
+    line-height: var(--standard-margin);
+}
+
+#newUrlPrefixInput {
+    padding: var(--standard-margin);
+    height: min-content;
+}
+
+#addUrlBtn {
+    margin-left: var(--standard-margin);
+    cursor: pointer;
+    border: 0.1em solid black;
+    border-radius: var(--standard-border-radius);
+}
+
+#addUrlBtn:hover {
+    background-color: lightgray;
+}
+
+#urlIgnoreList {
+    margin-top: 0;
+}
+
+#urlTable {
+    /* margin: 0 auto; */
+    font-size: 1.2em;
+    border: 1px solid black;
+    width: 100%;
+    padding: 0;
+    border-collapse: collapse;
+}
+
+#urlTable > tbody {
+    margin: 0;
+}
+
+#urlTable > tbody > tr {
+    padding: var(--standard-margin);
+}
+
+#urlTable > tbody > tr > td:first-child:hover {
+    background-color: lightgray;
+}
+
+#urlTable > tbody > tr > td {
+    margin: 0;
+}
+
+#urlTable > tbody > tr > td:last-child {
+    text-align: center;
+    color: red;
+    font-size: 1.4em;
+    cursor: pointer;
+}
+
+#urlTable > tbody > tr > td:last-child:hover {
+    background-color: lightgray;
+}
